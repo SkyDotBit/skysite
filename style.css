@@ -23,6 +23,10 @@
     font-family: "fuuu";
     src: url("fonts/POWDRFT_.ttf")
 }
+@font-face {
+    font-family: "socials";
+    src: url("fonts/social.ttf")
+}
 :root {
     --accent: blue;/
 }
@@ -58,6 +62,9 @@
 body {
     background-color: rgb(5, 0, 56);
     overflow-x: hidden;
+}
+a:link {
+    color: purple;
 }
 .about-me {
     align-items: center;
@@ -264,4 +271,11 @@ body {
 }
 .padderson {
     padding: 5px;
+}
+.socials {
+    font-family: "socials";
+    color: rgba(0, 0, 255, 1);
+}
+.interfont {
+    font-family: "Inter", sans-serif;
 }
