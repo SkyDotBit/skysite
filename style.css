@@ -307,3 +307,19 @@ a:link {
 .rounder {
     border-radius: 10px;
 }
+.contact {
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background-color: rgba(0, 0, 255, 0.35);
+    
+    z-index: 999999999;
+    
+    
+}
+.contacttext {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
