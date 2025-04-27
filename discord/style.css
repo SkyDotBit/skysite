@@ -5,6 +5,7 @@ body {
     background-size: cover;
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
+    background-size:100vw 100vh;
 }
 .star {
     color: white;
@@ -51,7 +52,7 @@ body {
     
     width: 20%;
     align-items: center;
-    background-color: rgba(0, 0, 255, 0.80);
+    background-color: rgba(108, 147, 255, 0.582);
     margin: 2%;
     display: flex;
     border-radius: 10px;
@@ -105,7 +106,7 @@ body {
 .project {
     
     width: 44%;
-    background-color: rgba(0, 0, 255, 0.80);
+    background-color: rgba(108, 147, 255, 0.582);
     
     display: flex;
     border-radius: 10px;
@@ -118,11 +119,11 @@ body {
     cursor: pointer;
     
     align-items: center;
-    background-color: rgba(0, 0, 255, 0.80);
+    background-color: rgba(108, 147, 255, 0.582);
     margin: 2%;
     display: block;
     border-radius: 10px;
-    border-color: rgba(0, 0, 255, 1);
+    border-color: rgb(108, 147, 255);
     border-style: solid;
     border-width: 2px;
     padding: 8px;
