@@ -323,3 +323,8 @@ a:link {
     font-family: "Inter", sans-serif;
     text-align: center;
 }
+.smallglow {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
