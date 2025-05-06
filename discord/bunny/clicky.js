@@ -9,4 +9,8 @@ document.querySelectorAll('.smallglow').forEach(function(div) {
         const url = this.getAttribute('url');
         window.location.href = url;
     });
+    div.addEventListener('touchstart', function() {
+        const url = this.getAttribute('url');
+        window.location.href = url;
+    });
 });
