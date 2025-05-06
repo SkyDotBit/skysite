@@ -62,6 +62,7 @@
 body {
     background-color: rgb(5, 0, 56);
     overflow-x: hidden;
+    animation: bouncy 1s ease;
 }
 a:link {
     color: purple;
@@ -338,7 +339,4 @@ a:link {
         transform: translateY(0px);
         opacity: 1;
     }
-}
-* {
-    animation: bouncy 1s ease;
 }
