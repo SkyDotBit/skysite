@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: "DistantGalaxy";
+    src: url('fonts/SFDistantGalaxy.ttf');
+}
+@font-face {
+    font-family: "gooey";
+    src: url("fonts/WC_Rhesus_B_Bta.ttf");
+}
+@font-face {
+    font-family: "Gooeyer";
+    src: url("fonts/Asterisp\ Alpha.otf");
+}
+@font-face {
+    font-family: "goo";
+    src: url("fonts/Celticfr.ttf")
+}
+@font-face {
+    font-family: "fuu";
+    src: url("fonts/IMFeFlow2.ttf")
+}
+@font-face {
+    font-family: "fuuu";
+    src: url("fonts/POWDRFT_.ttf")
+}
+@font-face {
+    font-family: "socials";
+    src: url("fonts/social.ttf")
+}
+:root {
+    --accent: blue;/
+}
+
+.filter-glow {
+    filter: drop-shadow(0 0 40px var(--accent));
+    z-index: 999999999;
+}
+.filter-glow.low {
+    filter: drop-shadow(0 0 40px blue);
+    z-index: 999999999;
+}
+.glow {
+    position: relative;
+    width: max-content;
+    max-width: 100%;
+    text-shadow: 0 0 40px purple, 0 0 120px purple;
+    z-index: 999999999;
+}
+.glow-white {
+    position: relative;
+    width: max-content;
+    max-width: 100%;
+    text-shadow: 0 0 40px white, 0 0 120px white;
+    z-index: 999999999;
+}
+.inter-title {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    z-index: 999999999;
+    font-style: normal;
+}
+body {
+    background-color: rgb(5, 0, 56);
+    overflow-x: hidden;
+}
+a:link {
+    color: purple;
+}
+.about-me {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background-color: rgba(0, 0, 255, 0.35);
+    height: 125px;
+    z-index: 999999999;
+    position: relative;
+}
+.about-me-text {
+    position: relative;
+    color: white;
+    /*/ font-family: "Inter", sans-serif; /*/
+    font-family: "Comfortaa";
+    z-index: 999999999999999;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+}
+.nebula {
+    font-family: "goo";
+    position: absolute;
+    background: linear-gradient(to right, rgb(64, 2, 159), rgb(70, 79, 249));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    filter: blur(40px);
+    font-size: 120px;
+    letter-spacing: 0;
+    animation-name: spinnycolornyeeoomm;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    z-index: 1;
+}
+
+.containers {
+    width: 100%;
+    display: flex;
+    white-space: normal;
+    position: absolute;
+    height: 100%;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+@keyframes spinnycolornyeeoomm {
+    0% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+.star {
+    color: white;
+    font-size: 5px;
+    position: absolute;
+    z-index: 2;
+}
+.staranimated {
+    animation-name: animatedstar;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes animatedstar {
+    0% {
+        opacity: 1%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 1%;
+    }
+}
+.languages {
+    display: flex;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background-color: rgba(0, 0, 255, 0.35);
+    
+    z-index: 999999999;
+    flex-wrap: wrap;
+    position: relative;
+}
+.languagesheader {
+    font-family: "Inter", sans-serif;
+    color: purple;
+}
+.language {
+    
+    width: 90%;
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.80);
+    margin: 2%;
+    display: flex;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 255, 1);
+    border-style: solid;
+    border-width: 2px;
+    padding: 4px;
+    height: 70px;
+}
+.language.container {
+    display: flex;
+    margin: 20px;
+}
+.active-border{
+    position: relative;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: conic-gradient(rgba(0, 0, 255, 0.80) var(--percentage), rgba(0, 0, 255, 0.35) var(--percentage));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0));
+}
+
+.po {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+.languagename {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.project {
+    
+    width: 90%;
+    background-color: rgba(0, 0, 255, 0.80);
+    
+    display: flex;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 255, 1);
+    border-style: solid;
+    border-width: 2px;
+    padding: 4px;
+    height: 400px;
+
+    cursor: pointer;
+    
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.80);
+    margin: 2%;
+    display: block;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 255, 1);
+    border-style: solid;
+    border-width: 2px;
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.projectname {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    
+}
+.freedom {
+    display: flex;
+    flex-wrap: wrap;
+}
+.license {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+}
+.padderson {
+    padding:4px;
+}
+.socials {
+    font-family: "socials";
+    color: rgba(0, 0, 255, 1);
+}
+.interfont {
+    font-family: "Inter", sans-serif;
+}
+.projecttext {
+    
+    color: white;
+    /*/ font-family: "Inter", sans-serif; /*/
+    font-family: "Comfortaa";
+    z-index: 999999999999999;
+    
+    
+}
+.hoverglow {
+    position: absolute;
+    border-radius: 50%;
+    transition: all 0.1s ease;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 10 10 200px rgba(255, 255, 255, 1), 10 10 200px rgba(255, 255, 255, 1);
+    opacity: 0;
+}
+.roundero {
+    border-radius: 50%;
+}
+.rounder {
+    border-radius: 10px;
+}
+.contact {
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    background-color: rgba(0, 0, 255, 0.35);
+    
+    z-index: 999999999;
+    
+    
+}
+.contacttext {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+.smallglow {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+/*/ Huhhh /*/
