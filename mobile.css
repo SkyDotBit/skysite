@@ -27,6 +27,14 @@
     font-family: "socials";
     src: url("fonts/social.ttf")
 }
+@font-face {
+    font-family: "sfbld";
+    src: url("fonts/sfbld.otf");
+}
+@font-face {
+    font-family: "sfnormal";
+    src: url("fonts/sfnormal.otf");
+}
 :root {
     --accent: blue;/
 }
@@ -339,4 +347,52 @@ a:link {
         transform: translateY(0px);
         opacity: 1;
     }
+}
+.discordstatusbg {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+    width: 280px;
+    height: 50px;
+    background-color: rgba(44, 44, 255, 0.8);
+    padding: 10px;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999;
+    padding-top: 0%;
+    visibility: hidden;
+}
+.discordnameplate {
+    width: 290px;
+    height: 60px;
+    border-radius: 10px;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.discorddisplayname {
+    font-family: "sfbld";
+    color: white;
+    font-weight: bold;
+}
+.discordstatus {
+    font-family: "sfnormal";
+}
+.socialsvgs {
+    fill: purple;
+}
+.bigbackdiv {
+    position: fixed;
+    top: 9px;
+    right: 9px;
+    height: 51;
+    width: 281px;
+    z-index: 999999999;
+    background-color: rgba(26, 26, 158, 0.74);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    visibility: hidden;
 }

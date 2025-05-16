@@ -114,11 +114,25 @@
     <canvas height="10px"></canvas>
     <script src="clicky.js"></script>
     <center><h1 class="languagesheader glow">Socials</h1></center>
-    <center><h1 class="socials"><a href="https://github.com/skydotbit">)</a> <a href="mailto:contact@skydevs.me">k</a> <a href="https://www.twitch.tv/skydotbit">a</a> <a href="https://www.youtube.com/@SkyDotBit">M</a> <a class="interfont" href="mailto:w3272579771994080@rc24.xyz">Wii</a> <a class="interfont" style="color: purple;" href="https://bsky.app/profile/skydevs.me">bsky</a> <a class="interfont" style="color: purple;" href="https://wetdry.world/@SkyDotBit">Wetdry</a></h1></center>
+    <center><h1 class="socials"><a href="https://github.com/skydotbit">)</a> <a href="mailto:contact@skydevs.me">k</a> <a href="https://www.twitch.tv/skydotbit">a</a> <a href="https://www.youtube.com/@SkyDotBit">M</a> <a class="socialsvgs" href="mailto:w3272579771994080@rc24.xyz"><img class="socialsvgs" src="svgs/Wii.svg" height="32px" width="32px"></a> <a class="interfont" style="color: purple;" href="https://bsky.app/profile/skydevs.me"><img class="socialsvgs" src="svgs/Bluesky_Logo.svg" height="32px" width="32px"></a> <a class="interfont" style="color: purple;" href="https://wetdry.world/@SkyDotBit"><img class="socialsvgs" src="svgs/mastodon.svg" height="32px" width="32px"></a></h1></center>
     <canvas height="20px"></canvas>
     <script src="star.js"></script>
     <script src="nebula.js"></script>
     <center><a href="LICENSE" class="license glow-white">MIT License</a></center>
     <script src="glow.js"></script>
     <script src="style.js"></script>
+    <div class="discordstatusbg" id="discordstatusbg">
+        <img src="static.png" class="discordnameplate">
+        <div style="display: inline-flex;">
+            <img id="avatar" style="border-radius: 50px; padding-top: 6px;" width="50px" height="50px">
+            <div>
+                <p class="discorddisplayname" style="padding-left: 6px;">Sky.Bit</p>
+                <p id="status" class="discordstatus" style="margin: -15px 0 0 0; padding-left: 6px;"></p>
+            </div>
+        </div>
+    </div>
+    <div id="bigbackdiv" class="bigbackdiv">
+        <canvas height="50px"></canvas>
+    </div>
+    <script src="discordstatus.js"></script>
 </body>
