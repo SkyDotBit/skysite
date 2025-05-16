@@ -368,7 +368,6 @@ a:link {
     position: fixed;
     display: flex;
     flex-wrap: wrap;
-    cursor: pointer;
 }
 .discorddisplayname {
     font-family: "sfbld";
