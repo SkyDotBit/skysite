@@ -1,6 +1,5 @@
 const activitydiv = document.getElementById("discordstatusbg");
 const statusman = document.getElementById("status");
-const avatarimg = document.getElementById("avatar");
 const bigbackdiv = document.getElementById("bigbackdiv");
 function discordstatuss() {
     console.log("Staters");
@@ -56,7 +55,7 @@ function discordstatuss() {
                 statusman.style.color = "gray";
                 statusman.innerHTML = "Offline";
             }
-            avatarimg.src = "https://cdn.discordapp.com/avatars/1154179709341552701/" + avatar + ".webp?size=80"
+            
             const elements = document.querySelectorAll('.funnygoobergoo');
             elements.forEach(element =>
                 {
