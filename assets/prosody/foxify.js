@@ -82,21 +82,6 @@ function togglestat() {
     enabled = !enabled;
 }
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.action === "togglestat") {
-        togglestat();
-        sendResponse({ reply: enabled ? "Enabled" : "Disabled" });
-        return true;
-    }
-});
-
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    if (request.action === "readit") {
-        sendResponse({ reply: enabled ? "Enabled" : "Disabled" });
-        return true;
-    }
-});
-
 function goobs() {
     walk(document.body);
 }
