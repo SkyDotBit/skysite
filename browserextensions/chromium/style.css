@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    background-image: linear-gradient(to bottom, rgb(78, 75, 255), rgb(199, 193, 255)) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    background-size:100vw 100vh;
+}
+.star {
+    color: white;
+    font-size: 5px;
+    position: absolute;
+    z-index: 2;
+}
+.staranimated {
+    animation-name: animatedstar;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+@keyframes animatedstar {
+    0% {
+        opacity: 1%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 1%;
+    }
+}
+.titlebox {
+    border-radius: 10px;
+    background-color: rgba(108, 147, 255, 0.582);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    text-wrap: auto;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.languagesheader {
+    font-family: "Inter", sans-serif;
+    color: purple;
+}
+.language {
+    
+    width: 20%;
+    align-items: center;
+    background-color: rgba(108, 147, 255, 0.582);
+    margin: 2%;
+    display: flex;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 255, 1);
+    border-style: solid;
+    border-width: 2px;
+    padding: 4px;
+    height: 70px;
+}
+.language.container {
+    display: flex;
+    margin: 20px;
+}
+.active-border{
+    position: relative;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background-color:#39B4CC;
+    background-image:
+        linear-gradient(91deg, transparent 50%, #A2ECFB 50%),
+        linear-gradient(90deg, #A2ECFB 50%, transparent 50%);
+}
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: conic-gradient(rgba(0, 0, 255, 0.80) var(--percentage), rgba(0, 0, 255, 0.35) var(--percentage));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0));
+}
+
+.po {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+.languagename {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+.project {
+    
+    width: 44%;
+    background-color: rgba(108, 147, 255, 0.582);
+    
+    display: flex;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 255, 1);
+    border-style: solid;
+    border-width: 2px;
+    padding: 4px;
+    height: 315px;
+
+    cursor: pointer;
+    
+    align-items: center;
+    background-color: rgba(108, 147, 255, 0.582);
+    margin: 2%;
+    display: block;
+    border-radius: 10px;
+    border-color: rgb(108, 147, 255);
+    border-style: solid;
+    border-width: 2px;
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+.projectname {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    
+}
+.freedom {
+    display: flex;
+    flex-wrap: wrap;
+}
+.license {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+}
+.padderson {
+    padding:4px;
+}
+.socials {
+    font-family: "socials";
+    color: rgba(0, 0, 255, 1);
+}
+.interfont {
+    font-family: "Inter", sans-serif;
+}
+.projecttext {
+    
+    color: white;
+    /*/ font-family: "Inter", sans-serif; /*/
+    font-family: "Comfortaa";
+    z-index: 999999999999999;
+    
+    
+}
+.hoverglow {
+    position: absolute;
+    border-radius: 50%;
+    transition: all 0.1s ease;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 10 10 200px rgba(255, 255, 255, 1), 10 10 200px rgba(255, 255, 255, 1);
+    opacity: 0;
+}
+.roundero {
+    border-radius: 50%;
+}
+.rounder {
+    border-radius: 10px;
+}
