@@ -1,0 +1,1 @@
+The converse.js png image is used for my static instance of converse.js at https://xmpp.skydevs.me
