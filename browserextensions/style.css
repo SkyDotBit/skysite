@@ -119,11 +119,11 @@ body {
     cursor: pointer;
     
     align-items: center;
-    background-color: rgba(108, 147, 255, 0.582);
+
     margin: 2%;
     display: block;
     border-radius: 10px;
-    border-color: rgb(108, 147, 255);
+
     border-style: solid;
     border-width: 2px;
     padding: 8px;
