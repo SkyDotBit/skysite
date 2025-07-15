@@ -371,6 +371,7 @@ a:link {
     padding: 10px;
     z-index: 999999999999999999999999999999999999999999999999999999999999999;
     padding-top: 0%;
+    visibility: hidden;
 }
 .discordnameplate {
     width: 290px;
@@ -379,14 +380,17 @@ a:link {
     position: fixed;
     display: flex;
     flex-wrap: wrap;
+    visibility: hidden;
 }
 .discorddisplayname {
     font-family: "sfbld";
     color: white;
     font-weight: bold;
+    visibility: hidden;
 }
 .discordstatus {
     font-family: "sfnormal";
+    visibility: hidden;
 }
 .socialsvgs {
     fill: purple;
@@ -404,4 +408,5 @@ a:link {
     flex-wrap: wrap;
     padding: 10px;
     align-items: center;
+    visibility: hidden;
 }
