@@ -34,7 +34,7 @@ function ismobile() {
     return /iPhone|iPad|iPod|Mobi|Android/i.test(navigator.userAgent);
 };
 function isiphone() {
-    return /iPhone|goo/i.test(navigator.userAgent);
+    return true;
 };
 document.querySelectorAll('.project').forEach(function(div) {
     div.addEventListener('click', function() {
