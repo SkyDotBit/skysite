@@ -34,7 +34,7 @@ function ismobile() {
     return /iPhone|iPad|iPod|Mobi|Android/i.test(navigator.userAgent);
 };
 function isiphone() {
-    return /iPhone/i.test(navigator.userAgent);
+    return /iPhone|goo/i.test(navigator.userAgent);
 };
 document.querySelectorAll('.project').forEach(function(div) {
     div.addEventListener('click', function() {
@@ -45,6 +45,9 @@ document.querySelectorAll('.project').forEach(function(div) {
 document.querySelectorAll('.smallglow').forEach(function(div) {
     div.addEventListener('click', function() {
         const url = this.getAttribute('url');
+        if (isiphone) {
+            haptic();
+        }
         window.location.href = url;
     });
     div.addEventListener('touchstart', function() {
