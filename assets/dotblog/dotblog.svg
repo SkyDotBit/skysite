@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="211.60023mm"
+   height="211.17104mm"
+   viewBox="0 0 211.60022 211.17103"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="bitmap.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#00ffff"
+     bordercolor="#000000"
+     borderopacity="0"
+     inkscape:showpageshadow="false"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     inkscape:export-bgcolor="#ffffff00"
+     showborder="false"
+     borderlayer="false">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="211.60022"
+       height="211.17102"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:export-filename="dotblog.svg"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96"
+     transform="translate(1.2876281)">
+    <rect
+       style="fill:#000000;stroke-width:0.265;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect4"
+       width="211.60023"
+       height="211.17102"
+       x="-1.2876282"
+       y="0"
+       ry="24.035727" />
+    <text
+       style="font-size:246.944px;line-height:0;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';white-space:pre;inline-size:287.006;fill:#ffffff;stroke-width:0;paint-order:stroke fill markers"
+       transform="translate(-362.68194,89.275558)"
+       x="362.23633"
+       y="102.15184"
+       id="text6"
+       xml:space="preserve"><tspan
+         x="362.23633"
+         y="102.15184"
+         id="tspan1">.</tspan></text>
+    <text
+       style="font-size:246.944px;line-height:0;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';white-space:pre;inline-size:287.006;fill:#ffffff;stroke-width:0;paint-order:stroke fill markers"
+       transform="translate(-387.14688,94.85528)"
+       x="439.52692"
+       y="102.15184"
+       id="text5"
+       xml:space="preserve"><tspan
+         x="439.52692"
+         y="102.15184"
+         id="tspan2">b</tspan></text>
+  </g>
+</svg>
