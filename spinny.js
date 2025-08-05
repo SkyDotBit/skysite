@@ -8,7 +8,7 @@ function dothe() {
     
 }
 let counter = 0;
-const items = 10;
+const items = 20;
 while (counter < items) {
     dothe();
     counter++;
