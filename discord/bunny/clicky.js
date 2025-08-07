@@ -34,11 +34,14 @@ function ismobile() {
     return /iPhone|iPad|iPod|Mobi|Android/i.test(navigator.userAgent);
 };
 function isiphone() {
-    return /iPhone|goo/i.test(navigator.userAgent);
+    return /iPhone/i.test(navigator.userAgent);
 };
 document.querySelectorAll('.project').forEach(function(div) {
     div.addEventListener('click', function() {
         const url = this.getAttribute('url');
+        if (isiphone()) {
+            haptic();
+        }
         window.location.href = url;
     });
 });
@@ -56,5 +59,15 @@ document.querySelectorAll('.smallglow').forEach(function(div) {
             haptic();
         }
         window.location.href = url;
+    });
+});
+document.querySelectorAll('.endlang').forEach(function(div) {
+    div.addEventListener('click', function() {
+        if (isiphone()) {
+            haptic();
+        }
+        const languages = document.getElementById("lang");
+        languages.classList.toggle('expanded');
+        languages.classList.toggle('compressed');
     });
 });

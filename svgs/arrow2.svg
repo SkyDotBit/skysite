@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="209.02916mm"
+   height="95.462631mm"
+   viewBox="0 0 209.02916 95.462631"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm">
+    <inkscape:page
+       x="-1.5372937e-16"
+       y="0"
+       width="209.02914"
+       height="95.462631"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-0.33544304,-1.4535165)">
+    <g
+       id="g5"
+       style="fill:#ffffff;fill-opacity:0.997423;fill-rule:evenodd"
+       transform="matrix(1.0915728,0,0,1.0152775,-15.09194,-34.876465)"
+       inkscape:label="g5"
+       inkscape:export-filename="arrow.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#ffffff;fill-opacity:0.997423;fill-rule:evenodd;stroke-width:0;paint-order:stroke fill markers"
+         id="rect1"
+         width="47.397251"
+         height="134.10497"
+         x="125.77158"
+         y="-144.98352"
+         ry="26.728897"
+         rx="23.698626"
+         transform="matrix(0.54237744,0.84013494,-0.8352621,0.54985201,0,0)"
+         inkscape:transform-center-x="-0.4016891"
+         inkscape:transform-center-y="0.37288372" />
+      <rect
+         style="fill:#ffffff;fill-opacity:0.997423;fill-rule:evenodd;stroke-width:0;paint-order:stroke fill markers"
+         id="rect1-8"
+         width="47.397251"
+         height="134.10497"
+         x="-51.670326"
+         y="40.403091"
+         ry="26.728897"
+         rx="23.698626"
+         transform="matrix(0.56287756,-0.82654029,0.83152971,0.55548028,0,0)"
+         inkscape:transform-center-x="-4.0588183"
+         inkscape:transform-center-y="-1.0147045" />
+    </g>
+  </g>
+</svg>

@@ -3,6 +3,11 @@
  * tijn.dev
  * @license MIT
  */
+const langDiv = document.getElementById("lang");
+langDiv.classList.remove("jiggle");
+const languages = document.getElementById("lang");
+languages.classList.remove('expanded');
+languages.classList.remove('jiggled');
 function haptic() {
     try {
         const labelEl = document.createElement('label');
@@ -34,11 +39,14 @@ function ismobile() {
     return /iPhone|iPad|iPod|Mobi|Android/i.test(navigator.userAgent);
 };
 function isiphone() {
-    return true;
+    return /iPhone/i.test(navigator.userAgent);
 };
 document.querySelectorAll('.project').forEach(function(div) {
     div.addEventListener('click', function() {
         const url = this.getAttribute('url');
+        if (isiphone()) {
+            haptic();
+        }
         window.location.href = url;
     });
 });
@@ -56,5 +64,28 @@ document.querySelectorAll('.smallglow').forEach(function(div) {
             haptic();
         }
         window.location.href = url;
+    });
+});
+document.querySelectorAll('.endlang').forEach(async function(div) {
+    div.addEventListener('click', async function() {
+        if (isiphone()) {
+            haptic();
+        }
+        const langDiv = document.getElementById("lang");
+        const excpand = langDiv.classList.contains("expanded");
+        const endLangButton = document.querySelector(".arrow");
+        if (!excpand) {
+            langDiv.classList.remove("jiggled");
+            endLangButton.classList.remove("rot");
+            langDiv.classList.add("jiggle");
+            langDiv.classList.add("expanded");
+            endLangButton.classList.add("root");
+        } else {
+            langDiv.classList.remove("jiggle");
+            endLangButton.classList.remove("root");
+            langDiv.classList.add("jiggled");
+            langDiv.classList.remove("expanded");
+            endLangButton.classList.add("rot");
+        }
     });
 });
