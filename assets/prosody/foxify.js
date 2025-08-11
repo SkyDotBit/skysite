@@ -43,29 +43,40 @@ async function blocklist() {
 }
 
 async function handleText(textNode) {
-    const matches = textNode.nodeValue.match(regex);
-    if (matches && !(await blocklist()) && enabled) {
-        const parts = textNode.nodeValue.split(regex);
-        const fragment = document.createDocumentFragment();
-
-        for (let i = 0; i < parts.length; i++) {
-            fragment.appendChild(document.createTextNode(parts[i]));
-            if (i < matches.length) {
-                const img = document.createElement("img");
-                const matchedEmoji = matches[i].slice(2, -1); // Remove the colons
-                img.src = `https://skydevs.me/assets/neofox/${matchedEmoji}.png`;
-                img.width = 25;
-                img.height = 25;
-                img.classList.add("neofox");
-                img.alt = matchedEmoji;
-                fragment.appendChild(img);
+    let gooberdoo = "";
+    for (const image of neofoxos) {
+        if (textNode.nodeValue.includes(image)) {
+            const supergoo = image + "_";
+            if (textNode.nodeValue.includes(supergoo)) {
+                if (image.includes(supergoo)) {
+                    gooberdoo = image;
+                    console.log(image);
+                    console.log("Big goo")
+                    break;
+                }
+            } else {
+                gooberdoo = image;
+                console.log(image);
+                break;
             }
         }
-
+    }
+    const match = textNode.nodeValue.match(regex);
+    if (match && !(await blocklist()) && enabled) {
+        const img = document.createElement("img");
+        img.src = `https://skydevs.me/assets/neofox/${gooberdoo}.png`;
+        img.width = 25;
+        img.height = 25;
+        img.classList.add("neofox")
+        img.alt = gooberdoo
+        const parts = textNode.nodeValue.split(match[0]);
+        const fragment = document.createDocumentFragment();
+        fragment.appendChild(document.createTextNode(parts[0]));
+        fragment.appendChild(img);
+        fragment.appendChild(document.createTextNode(parts[1] || ""));
         textNode.parentNode.replaceChild(fragment, textNode);
     }
 }
-
 
 function togglestat() {
     enabled = !enabled;
