@@ -89,3 +89,51 @@ document.querySelectorAll('.endlang').forEach(async function(div) {
         }
     });
 });
+document.querySelectorAll('.downyago').forEach(async function(div) {
+    div.addEventListener('click', async function() {
+        if (isiphone()) {
+            haptic();
+        }
+        const langDiv = document.getElementById("downyago");
+        const excpand = langDiv.classList.contains("root");
+        const endLangButton = document.querySelector(".downyago");
+        if (!excpand) {
+            endLangButton.classList.remove("rot");
+            endLangButton.classList.add("root");
+            scrollDown(800);
+        } else {
+            endLangButton.classList.remove("root");
+            endLangButton.classList.add("rot");
+            scrollTop(800);
+        }
+    });
+});
+function scrollTop(duration) {
+    const start = window.scrollY;
+    const startTime = performance.now();
+    function animate(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+        const scrollPos = start * (1 - progress);
+        window.scrollTo(0, scrollPos);
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        }
+    }
+    requestAnimationFrame(animate);
+}
+function scrollDown(duration) {
+    const start = window.scrollY;
+    const end = document.body.scrollHeight;
+    const startTime = performance.now();
+    function animate(currentTime) {
+        const elapsedTime = currentTime - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+        const scrollPos = start + (end - start) * progress;
+        window.scrollTo(0, scrollPos);
+        if (progress < 1) {
+            requestAnimationFrame(animate);
+        }
+    }
+    requestAnimationFrame(animate);
+}
