@@ -1,5 +1,7 @@
 const birthyear = [9, 30, 2010];
+const programmingYear = [9, 30, 2024];
 let age = 0;
+let programming = 0;
 const currentdate = new Date()
 const currentyear = currentdate.getFullYear();
 const currentmonth = currentdate.getMonth() + 1;
@@ -8,6 +10,11 @@ age = currentyear - birthyear[2];
 if (currentmonth < birthyear[1] || (currentmonth === birthyear[1] && currentday < birthyear[0])) {
     age--;
 }
+if (currentmonth < programmingYear[1] || (currentmonth === programmingYear[1] && currentday < programmingYear[0])) {
+    programming--;
+}
 console.log(age);
 const agecounter = document.getElementById("age");
 agecounter.textContent = age;
+const programmingCounter = document.getElementById("programming");
+programmingCounter.textContent = age;
