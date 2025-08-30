@@ -17,4 +17,4 @@ console.log(age);
 const agecounter = document.getElementById("age");
 agecounter.textContent = age;
 const programmingCounter = document.getElementById("programming");
-programmingCounter.textContent = age;
+programmingCounter.textContent = programmingCounter;
