@@ -1,0 +1,18 @@
+.toolbar {
+  border-radius: 50%;
+  height: 75px;
+  width: 450px;
+  background: rgba(204, 204, 204, 0.7);
+}
+
+@supports (-apple-visual-effect: -apple-system-glass-material) {
+  .toolbar {
+    background: transparent;
+    -apple-visual-effect: -apple-system-glass-material;
+  }
+}
+
+body {
+    background-repeat: repeat;
+    background-image: url("/tests/liquid/gooblo.png");
+}
