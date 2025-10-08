@@ -7,11 +7,11 @@ const currentyear = currentdate.getFullYear();
 const currentmonth = currentdate.getMonth() + 1;
 const currentday = currentdate.getDate();
 age = currentyear - birthyear[2];
-if (currentmonth < birthyear[1] || (currentmonth === birthyear[1] && currentday < birthyear[0])) {
+if (currentmonth < birthyear[0] || (currentmonth === birthyear[0] && currentday < birthyear[1])) {
     age--;
 }
 programming = currentyear - programmingYear[2];
-if (currentmonth < programmingYear[1] || (currentmonth === programmingYear[1] && currentday < programmingYear[0])) {
+if (currentmonth < programmingYear[0] || (currentmonth === programmingYear[0] && currentday < programmingYear[1])) {
     programming--;
 }
 console.log(age);
