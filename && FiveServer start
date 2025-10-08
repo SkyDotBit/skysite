@@ -1,0 +1,11 @@
+const foxAPI = "https://randomfox.ca/floof/";
+fetch(foxAPI).then(
+  response => {
+    return response.json();
+  }
+).then(
+  data => {
+    const foxImg = data.image;
+  }
+)
+console.log(foxImg);
