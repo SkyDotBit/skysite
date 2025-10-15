@@ -44,7 +44,8 @@ async function walk(node) {
 
 async function blocklist() {
     for (const site of blockedgoobs.split("\n")) {
-        if (window.location.href.includes(site.trim())) {
+        if (window.location.href.includes(site.trim()) && site.trim() != "") {
+            console.log("Blocked" + site + blockedgoobs + site);
             return true;
         }
     }
