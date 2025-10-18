@@ -1,0 +1,155 @@
+/* splash screen edits */
+#splash {
+    #splashSpinner {
+        margin: 2rem 0 0 2rem !important;
+        transform: unset !important;
+    }
+}
+
+/* landing page/logged out view modifications */
+#sharkey_app {
+    [class^="visitor-root-"] {
+        [class^="visitor-main-"] {
+
+            /* home button should be more visible */
+            [class^="visitor-homeButton-"] {
+                background: var(--MI_THEME-accent) !important;
+                color: var(--MI_THEME-fgOnAccent) !important;
+            }
+
+            [class^="visitor-content-"] {
+
+                /* multiple elements i'd prefer hidden
+                * shape1 and shape2 refer to the weird shape things on the left
+                * pages-welcome-timeline-root refers to the scrolling and very buggy timeline on the right */
+                [class^="pages-welcome-entrance-a-shape1-"],
+                [class^="pages-welcome-entrance-a-shape2-"],
+                [class^="pages-welcome-timeline-root-"] {
+                    display: none;
+                }
+
+                /* color text appropriately */
+                [class^="pages-welcome-entrance-a-logoWrapper-"] {
+                    [class^="pages-welcome-entrance-a-poweredBy-"] {
+                        color: var(--MI_THEME-fg);
+                    }
+
+                    [class^="pages-welcome-entrance-a-misskey-"] {
+                        width: 120px !important;
+                    }
+                }
+
+                /* give logo blurred background */
+                [class^="pages-welcome-entrance-a-logoWrapper-"]::before {
+                    -webkit-backdrop-filter: var(--MI-blur, blur(15px));
+                    backdrop-filter: var(--MI-blur, blur(15px));
+                    background: var(--MI_THEME-acrylicPanel);
+                    border-radius: var(--MI-radius);
+                    content: '';
+                    position: absolute;
+                    bottom: -.5rem;
+                    left: -.8rem;
+                    right: -.8rem;
+                    top: -.8rem;
+                    z-index: -5;
+                }
+
+                /* re-centers the background due to shape1/2 being removed
+             * as well as also replacing it with one that allows us to animate it with a pattern */
+                [class^="MkFeaturedPhotos-root-"] {
+                    animation: animatebg 100s linear infinite;
+                    background-image: url("https://cdn.booping.synth.download/assets/synth+grid+bg.png") !important;
+                    background-repeat: repeat;
+                    background-size: auto;
+                    height: 100% !important;
+                    left: 0 !important;
+                    opacity: .8;
+                    top: 0 !important;
+                    width: 100% !important;
+                }
+
+                /* the main instance info page thing */
+                [class^="pages-welcome-entrance-a-contents-"] {
+                    margin-left: auto !important;
+                    margin-right: auto !important;
+                    padding: 130px 0;
+
+                    /* blurred background effect behind instance information */
+                    [class^="MkVisitorDashboard-root-"]::before {
+                        -webkit-backdrop-filter: var(--MI-blur, blur(15px));
+                        backdrop-filter: var(--MI-blur, blur(15px));
+                        background: var(--MI_THEME-acrylicPanel);
+                        border-radius: var(--MI-radius);
+                        content: '';
+                        position: absolute;
+                        bottom: -1.5rem;
+                        left: -1.5rem;
+                        right: -1.5rem;
+                        top: .5rem;
+                    }
+
+                    /* expand the timeline widget view */
+                    [class^="MkVisitorDashboard-tl-"] {
+                        [class^="MkVisitorDashboard-tlBody-"] {
+                            height: 50rem !important;
+                        }
+                    }
+                }
+
+                /* federation scrolling bar thingy */
+                [class^="pages-welcome-entrance-a-federation-"] {
+                    bottom: unset !important;
+                    top: 16px !important;
+                    z-index: 50 !important;
+                }
+            }
+        }
+
+        /* sidebar */
+        [class^="visitor-side-"] {
+            background: linear-gradient(var(--MI_THEME-bg), var(--MI_THEME-accent));
+
+            /* banner image */
+            [class^="visitor-banner-"] {
+                animation: animatebg 100s linear infinite;
+                background-image: url("https://cdn.booping.synth.download/assets/synth+grid+bg.png") !important;
+                background-repeat: repeat;
+                background-size: auto;
+                height: 100% !important;
+                left: 0 !important;
+                opacity: .8;
+                top: 0 !important;
+                width: 100% !important;
+            }
+        }
+
+        /* disable the background animation if browser doesn't want animations */
+        @media (prefers-reduced-motion: reduce) {
+            [class^="visitor-side-"] [class^="visitor-banner-"] {
+                animation: unset !important;
+            }
+
+            [class^="visitor-main-"] [class^="visitor-content-"] [class^="MkFeaturedPhotos-root-"] {
+                animation: unset !important;
+            }
+        }
+    }
+
+    /* re-enable the pfps next to sharkey styled note boosts */
+    [class^="SkNote-renote-"] {
+        [class^="_noSelect MkAvatar-root-"] {
+            display: unset !important;
+        }
+    }
+}
+
+/* animation for the background on the landing page */
+@keyframes animatebg {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: -960px -960px;
+    }
+}
