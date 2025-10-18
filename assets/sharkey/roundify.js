@@ -10,7 +10,7 @@
         const isWelcomePage = document.querySelector('[class*="visitor-root-"]');
         
         // compare both values to execute
-        const isLoggedOut = !hasAuthToken && isWelcomePage;
+        const isLoggedOut = !hasAuthToken;
         
         if (isLoggedOut) {
             // add radius-misskey if logged out
