@@ -73,9 +73,14 @@ body {
     animation: bouncy 1s ease;
 }
 a:link {
-    color: purple;
+    color:#D428FF;
 }
-
+a:visited {
+  color: #D428FF;
+}
+.filter-glow-orange {
+  filter:drop-shadow(0 0 40px #F4834D)
+}
 .about-me {
     align-items: center;
     justify-content: center;
@@ -83,11 +88,15 @@ a:link {
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: calc(85% - 8px);
     background-color: rgba(0, 0, 255, 0.35);
-    height: 315px;
+    height: 395px;
     z-index: 999999999;
     position: relative;
+    border: 8px solid blue;
+}
+.fopi {
+  display: none;
 }
 .about-me-text {
     position: relative;
@@ -490,4 +499,8 @@ a:link {
     height: 50px;
     /*opacity: 0.5; */
     transition: height 0.5s ease;
+}
+.xmppstatus {
+  font-size: 10px;
+  color: yellow;
 }

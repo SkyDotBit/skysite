@@ -26,10 +26,14 @@
         </a>
     </center>
     <canvas height="6px"></canvas>
+
     <div class="about-me filter-glow">
-        <strong><p class="about-me-text">I'm a <a style="color: lightgreen;" id="age"></a> year old self-taught developer who believes they're a fox. I also happen to do things on the internet and I've been doing said things for <a style="color: lightgreen;" id="programming"></a> years. By no means am I good at what I do or ever will be good, I'm jus fop. You can take a look at some of my projects that I'm working on if you'd like down below. If you want to contact me, I usually immediately respond when you contact me via <a href="xmpp:sky.bit@xmpp.skydevs.me">XMPP</a>. All of my newer projects will be on <a href="https://git.gay">git.gay</a> and not on GitHub. If you hate this site and want something simpler you can visit <a href="gemini://skydevs.me">the same site but on the Gemini protocol</a></p></strong>
+      <strong><p class="about-me-text">I'm a <a style="color: lightgreen;" id="age"></a> year old self-taught <small style="color: #F4834D;">(foxo)</small> developer. I also happen to do things on the internet and I've been doing said things for <a style="color: lightgreen;" id="programming"></a> years. By no means am I good at what I do or ever will be good, I'm jus fop. You can take a look at some of my projects that I'm working on if you'd like down below. If you want to contact me, I usually immediately respond when you contact me via <a href="xmpp:sky.bit@xmpp.skydevs.me">XMPP</a> <a class="xmppstatus" id="xmppstatus">(...)</a>. All of my newer projects will be on <a href="https://git.gay">git.gay</a> and not on GitHub. If you hate this site and want something simpler you can visit <a href="gemini://skydevs.me">the same site but on the Gemini protocol</a></p></strong>
+      <img src="assets/neofox/neofox_floof.png" class="filter-glow-orange fopi" width="200" height="200" id="fopi">
     </div>
+    <script src="nebulaAnimation.js"></script>
     <script src="age.js"></script>
+    <script src="xmppstatuscheck.js"></script>
     <canvas height="10px"></canvas>
     <center><h1 class="languagesheader glow">Skills</h1></center>
     <div class="languages collapsed expanded" id="lang">
@@ -203,7 +207,7 @@
             <p class="languagename glow-white">pmOS</p>
         </div>
         <canvas height="80px"></canvas>
-        <canvas height="55px"></canvas>
+        <canvas height="55px" id="clipcontrol"></canvas>
         <div class="endlang">
             <center style="align-items: center;"><img class="arrow glow-white" src="svgs/arrow2.svg"></center>
         </div>
@@ -295,6 +299,6 @@
     <div id="bigbackdiv" class="bigbackdiv">
         <canvas height="50px"></canvas>
     </div>
-    <script src="discordstatus.js"></script>
+    <script src="ismac.js"></script>
     
 </body>
