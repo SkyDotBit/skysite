@@ -15,6 +15,7 @@
         if (isLoggedOut) {
             // add radius-misskey if logged out
             document.documentElement.classList.add('radius-misskey');
+            localStorage.clear();
             observer.disconnect(); // stop observing once we've done our job
         }
     }
